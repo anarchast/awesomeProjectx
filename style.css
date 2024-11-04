@@ -1,0 +1,93 @@
+/* Allgemeine Styles */
+body {
+    font-family: Arial, sans-serif; /* Schriftart Arial */
+    background-color: #181818;      /* Dunkler Hintergrund für die gesamte Seite */
+    color: #fff;                    /* Standardtextfarbe */
+}
+
+/* Grundlegende Styles für das Textfeld */
+input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #d5006d;      /* Dominanter pinker Rahmen */
+    border-radius: 5px;
+    background-color: #222;         /* Dunkler Hintergrund */
+    color: #fff;                    /* Weißer Text */
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover- und Fokus-Zustände für das Textfeld */
+input[type="text"]:hover,
+input[type="text"]:focus {
+    border-color: #ff4081;         /* Hellere pinke Farbe bei Interaktion */
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 64, 129, 0.5);
+}
+
+/* Platzhalter-Styles */
+input[type="text"]::placeholder {
+    color: #aaa;                   /* Hellgrau für Platzhaltertext */
+}
+
+/* Grundlegende Styles für den Button */
+button {
+    padding: 10px 20px;
+    border: 2px solid #d5006d;     /* Dominanter pinker Rahmen */
+    border-radius: 5px;
+    background-color: #444;        /* Dunkler Hintergrund */
+    color: #fff;                   /* Weißer Text */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover- und Fokus-Zustände für den Button */
+button:hover {
+    background-color: #ff4081;     /* Helle Farbe beim Hover */
+    box-shadow: 0 0 5px rgba(255, 64, 129, 0.5);
+}
+
+/* Aktiv-Zustand für den Button */
+button:active {
+    background-color: #c60055;     /* Etwas dunkler bei Aktivierung */
+}
+
+/* Grundlegende Styles für die Card */
+.card {
+    background-color: #333;        /* Dunkler Hintergrund für die Card */
+    border: 2px solid #d5006d;     /* Dominanter pinker Rahmen */
+    border-radius: 10px;           /* Abgerundete Ecken */
+    padding: 20px;                 /* Innenabstand */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Sanfter Schlagschatten */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Übergangseffekte */
+}
+
+/* Hover-Effekt für die Card */
+.card:hover {
+    transform: translateY(-5px);   /* Leichte Anhebung bei Hover */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6); /* Verstärkter Schlagschatten */
+}
+
+/* Text innerhalb der Card */
+.card h2 {
+    color: #fff;                   /* Weißer Text für die Überschrift */
+    margin: 0 0 10px;             /* Abstand nach unten */
+}
+
+.card p {
+    color: #ddd;                   /* Hellgrauer Text für den Inhalt */
+    line-height: 1.5;              /* Zeilenhöhe für bessere Lesbarkeit */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    input[type="text"],
+    button,
+    .card {
+        font-size: 14px;           /* Kleinere Schriftgröße auf kleinen Bildschirmen */
+    }
+    .card {
+        padding: 15px;             /* Weniger Innenabstand auf kleinen Bildschirmen */
+    }
+}
